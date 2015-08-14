@@ -1,0 +1,37 @@
+{
+  "title": "About Search Plugin",
+  "story": [
+  {
+    "type": "paragraph",
+    "id": "c042a9c3ae0c51a1",
+    "text": "Here we describe the purpose of the plugin and include a sample."
+  },
+  {
+    "type": "search",
+    "id": "258bd47ce2e5c286",
+    "text": "This is text in the new plugin. You can *double-click* to edit it too."
+  }
+],
+  "journal": [
+  {
+    "type": "create",
+    "item": {
+      "title": "About Search Plugin",
+      "story": [
+  {
+    "type": "paragraph",
+    "id": "c042a9c3ae0c51a1",
+    "text": "Here we describe the purpose of the plugin and include a sample."
+  },
+  {
+    "type": "search",
+    "id": "258bd47ce2e5c286",
+    "text": "This is text in the new plugin. You can *double-click* to edit it too."
+  }
+]
+    },
+    "date": 1439516063000,
+    "certificate": "from mkplugin.sh"
+  }
+]
+}
