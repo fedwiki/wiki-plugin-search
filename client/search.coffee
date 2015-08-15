@@ -14,13 +14,17 @@ emit = ($item, item) ->
     </div>
   """
 
-  flag = (site) ->
+  flag = (slug, site) ->
     """
-      <img src="http://#{site}/favicon.png" width=16 title="#{site}">
+      <img class="remote"
+        title="#{site}"
+        src="http://#{site}/favicon.png"
+        data-site="#{site}"
+        data-slug="#{slug}">
     """
 
   twins = (slug, sites) ->
-    "#{slug.replace(/-/g, ' ')}<br>#{(flag site for site in sites).join(' ')}"
+    "#{slug.replace(/-/g, ' ')}<br>#{(flag slug, site for site in sites).join(' ')}"
 
   report = (result) ->
     (twins slug, sites for slug, sites of result).join('<br>')
