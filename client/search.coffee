@@ -33,11 +33,19 @@ emit = ($item, item) ->
     $item.find('p.caption').text("#{Object.keys(data.result).length} titles")
     $item.append report data.result
 
-  request =
-    find: 'words',
-    match: 'and',
-    query: item.text || 'dorkbot'
+  parse = (text) ->
+    request = {}
+    text = text.replace /\b(AND|OR)\b/g, (op) ->
+      request.match = op.toLowerCase()
+      ''
+    text = text.replace /\b(WORDS|LINKS|SITES|ITEMS|PLUGINS)\b/g, (op) ->
+      request.find = op.toLowerCase()
+      ''
+    request.query = text
+    request
 
+  request = parse item.text
+  console.log('request',request)
   url = "http://#{item.site||'search.fed.wiki.org:3030'}/match"
 
   $.post(url, request, success, 'json')
