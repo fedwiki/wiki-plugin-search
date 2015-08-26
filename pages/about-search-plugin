@@ -30,7 +30,7 @@
     {
       "type": "search",
       "id": "258bd47ce2e5c286",
-      "text": "dorkbot AND INPUT"
+      "text": "LINKS about plugin AND INPUT"
     },
     {
       "type": "search",
@@ -111,7 +111,7 @@
     {
       "type": "paragraph",
       "id": "6554b2115267146d",
-      "text": "Note. The INPUT form functionality bypasses the item editing and journal recording that would otherwise accompany casual searching."
+      "text": "Note. The INPUT and SEARCH options bypass the item editing and journal recording that would otherwise accompany casual searching."
     }
   ],
   "journal": [
@@ -651,6 +651,36 @@
       "after": "258bd47ce2e5c286",
       "id": "9d0018d827c6122d",
       "date": 1440567625626
+    },
+    {
+      "type": "edit",
+      "id": "258bd47ce2e5c286",
+      "item": {
+        "type": "search",
+        "id": "258bd47ce2e5c286",
+        "text": "LINKS about plugins AND INPUT"
+      },
+      "date": 1440570097586
+    },
+    {
+      "type": "edit",
+      "id": "258bd47ce2e5c286",
+      "item": {
+        "type": "search",
+        "id": "258bd47ce2e5c286",
+        "text": "LINKS about plugin AND INPUT"
+      },
+      "date": 1440570112304
+    },
+    {
+      "type": "edit",
+      "id": "6554b2115267146d",
+      "item": {
+        "type": "paragraph",
+        "id": "6554b2115267146d",
+        "text": "Note. The INPUT and SEARCH options bypass the item editing and journal recording that would otherwise accompany casual searching."
+      },
+      "date": 1440570517189
     }
   ]
 }
