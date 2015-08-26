@@ -9,9 +9,10 @@ expand = (text)->
 emit = ($item, item) ->
   $item.append """
     <div style="width:93%; background:#eee; padding:.8em; margin-bottom:5px; text-align: center;">
-      <span">#{expand item.text}</span>
-      <p class="caption">waiting</p>
+      <span>#{expand item.text}</span>
+      <p class="caption">ready</p>
     </div>
+    <div class=report></div>
   """
 
   flag = (slug, site) ->
@@ -29,9 +30,40 @@ emit = ($item, item) ->
   report = (result) ->
     (twins slug, sites for slug, sites of result).join('<br>')
 
+  status = (text) ->
+    $item.find('p.caption').text text
+
   success = (data) ->
-    $item.find('p.caption').text("#{Object.keys(data.result).length} titles")
-    $item.append report data.result
+    status "#{Object.keys(data.result).length} titles"
+    $item
+      .find('.report')
+      .append report data.result
+
+  search = (request) ->
+    url = "http://#{item.site||'search.fed.wiki.org:3030'}/match"
+    console.log 'search', request
+    $.post(url, request, success, 'json')
+      .fail (e) -> $item.find('.caption').text("search failed #{e.responseText}")
+    $item.find('.report').empty()
+    status "searching"
+
+  keystroke = (e) ->
+    if e.keyCode == 13
+      input = $item.find('input').val()
+      if input.match /\w/
+        request = $.extend({}, $item.request);
+        request.query += " #{input}"
+        search request
+
+  handle = (request) ->
+    if request.input
+      $item.request = request
+      $item
+        .find('span')
+        .append "<input type=text size=70></input>"
+        .keyup(keystroke)
+    else
+      search request
 
   parse = (text) ->
     request = {}
@@ -41,15 +73,13 @@ emit = ($item, item) ->
     text = text.replace /\b(WORDS|LINKS|SITES|ITEMS|PLUGINS)\b/g, (op) ->
       request.find = op.toLowerCase()
       ''
+    text = text.replace /\b(INPUT)\b/, (op) ->
+      request.input = true
+      ''
     request.query = text
     request
 
-  request = parse item.text
-  console.log('request',request)
-  url = "http://#{item.site||'search.fed.wiki.org:3030'}/match"
-
-  $.post(url, request, success, 'json')
-    .fail (e) -> $item.find('.caption').text("search failed #{e.responseText}")
+  handle parse item.text
 
 bind = ($item, item) ->
   $item.dblclick -> wiki.textEditor $item, item
