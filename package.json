@@ -1,6 +1,6 @@
 {
   "name": "wiki-plugin-search",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Federated Wiki - Search Plugin",
   "keywords": [
     "search",
@@ -9,9 +9,9 @@
     "plugin"
   ],
   "author": {
-    "name": "Your Name",
-    "email": "you@example.com",
-    "url": "http://example.com"
+    "name": "Ward Cunningham",
+    "email": "ward@c2.com",
+    "url": "http://ward.fed.wiki.org"
   },
   "contributors": [],
   "scripts": {
@@ -28,10 +28,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fedwiki/wiki-plugin-search.git"
+    "url": "https://github.com/wardcunningham/wiki-plugin-search.git"
   },
   "bugs": {
-    "url": "https://github.com/fedwiki/wiki-plugin-search/issues"
+    "url": "https://github.com/wardcunningham/wiki-plugin-search/issues"
   },
   "engines": {
     "node": "0.10"
