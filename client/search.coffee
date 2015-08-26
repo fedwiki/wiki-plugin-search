@@ -9,7 +9,7 @@ expand = (text)->
 emit = ($item, item) ->
   $item.append """
     <div style="width:93%; background:#eee; padding:.8em; margin-bottom:5px; text-align: center;">
-      <span>#{expand item.text}</span>
+      <span>#{expand item.text}<br></span>
       <p class="caption">ready</p>
     </div>
     <div class=report></div>
@@ -62,6 +62,12 @@ emit = ($item, item) ->
         .find('span')
         .append "<input type=text size=70></input>"
         .keyup(keystroke)
+    else if request.search
+      $item.request = request
+      $item
+        .find('span')
+        .append "<button>search</button>"
+        .click -> search request
     else
       search request
 
@@ -75,6 +81,9 @@ emit = ($item, item) ->
       ''
     text = text.replace /\b(INPUT)\b/, (op) ->
       request.input = true
+      ''
+    text = text.replace /\b(SEARCH)\b/, (op) ->
+      request.search = true
       ''
     request.query = text
     request

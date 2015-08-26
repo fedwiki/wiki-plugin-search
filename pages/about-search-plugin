@@ -25,12 +25,18 @@
     {
       "type": "paragraph",
       "id": "20c3d4b5d29b88e7",
-      "text": "When further input is required an input field appears and searching is delayed until return/enter is pressed."
+      "text": "When further input is required an input field or search button appears and searching is delayed until return/enter or the button is pressed."
     },
     {
       "type": "search",
       "id": "258bd47ce2e5c286",
       "text": "dorkbot AND INPUT"
+    },
+    {
+      "type": "search",
+      "id": "9d0018d827c6122d",
+      "text": "SEARCH ITEMS dbed99c5d3c702b1",
+      "alias": "258bd47ce2e5c286"
     },
     {
       "type": "paragraph",
@@ -96,6 +102,11 @@
       "type": "paragraph",
       "id": "af5cd1dc91af80a7",
       "text": "Say INPUT to delay until additional terms are entered."
+    },
+    {
+      "type": "paragraph",
+      "id": "2a7735bda9bdb364",
+      "text": "Say SEARCH to delay until a search button is pressed."
     },
     {
       "type": "paragraph",
@@ -607,6 +618,39 @@
         "text": "Note. The INPUT form functionality bypasses the item editing and journal recording that would otherwise accompany casual searching."
       },
       "date": 1440564069895
+    },
+    {
+      "type": "add",
+      "id": "2a7735bda9bdb364",
+      "item": {
+        "type": "paragraph",
+        "id": "2a7735bda9bdb364",
+        "text": "Say SEARCH to delay until a search button is pressed."
+      },
+      "after": "af5cd1dc91af80a7",
+      "date": 1440567193589
+    },
+    {
+      "type": "edit",
+      "id": "20c3d4b5d29b88e7",
+      "item": {
+        "type": "paragraph",
+        "id": "20c3d4b5d29b88e7",
+        "text": "When further input is required an input field or search button appears and searching is delayed until return/enter or the button is pressed."
+      },
+      "date": 1440567418536
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "search",
+        "id": "9d0018d827c6122d",
+        "text": "SEARCH ITEMS dbed99c5d3c702b1",
+        "alias": "258bd47ce2e5c286"
+      },
+      "after": "258bd47ce2e5c286",
+      "id": "9d0018d827c6122d",
+      "date": 1440567625626
     }
   ]
 }
