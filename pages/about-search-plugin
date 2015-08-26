@@ -1,37 +1,612 @@
 {
   "title": "About Search Plugin",
   "story": [
-  {
-    "type": "paragraph",
-    "id": "c042a9c3ae0c51a1",
-    "text": "Here we describe the purpose of the plugin and include a sample."
-  },
-  {
-    "type": "search",
-    "id": "258bd47ce2e5c286",
-    "text": "This is text in the new plugin. You can *double-click* to edit it too."
-  }
-],
-  "journal": [
-  {
-    "type": "create",
-    "item": {
-      "title": "About Search Plugin",
-      "story": [
-  {
-    "type": "paragraph",
-    "id": "c042a9c3ae0c51a1",
-    "text": "Here we describe the purpose of the plugin and include a sample."
-  },
-  {
-    "type": "search",
-    "id": "258bd47ce2e5c286",
-    "text": "This is text in the new plugin. You can *double-click* to edit it too."
-  }
-]
+    {
+      "type": "paragraph",
+      "id": "c042a9c3ae0c51a1",
+      "text": "Search retrieves page references from information recorded by federated wiki search services."
     },
-    "date": 1439516063000,
-    "certificate": "from mkplugin.sh"
-  }
-]
+    {
+      "type": "paragraph",
+      "id": "3b38d4f611f96f7a",
+      "text": "Search remains experimental. [https://github.com/WardCunningham/wiki-plugin-search plugin] [https://github.com/WardCunningham/search server]"
+    },
+    {
+      "type": "paragraph",
+      "id": "449188c8e5628f7f",
+      "text": "The plugin may be fully or partially configured for a specific query. "
+    },
+    {
+      "type": "search",
+      "id": "637384f69465bfe1",
+      "text": "dorkbot AND oscon",
+      "alias": "258bd47ce2e5c286"
+    },
+    {
+      "type": "paragraph",
+      "id": "20c3d4b5d29b88e7",
+      "text": "When further input is required an input field appears and searching is delayed until return/enter is pressed."
+    },
+    {
+      "type": "search",
+      "id": "258bd47ce2e5c286",
+      "text": "dorkbot AND INPUT"
+    },
+    {
+      "type": "paragraph",
+      "id": "fb3b13bd49131831",
+      "text": "The caption says 'ready' while waiting for user input."
+    },
+    {
+      "type": "paragraph",
+      "id": "f3048bf1bbbc5aa6",
+      "text": "The caption says 'searching' while waiting for results."
+    },
+    {
+      "type": "paragraph",
+      "id": "c315dfe56619e6da",
+      "text": "The caption says 'nn titles' when as many results show."
+    },
+    {
+      "type": "markdown",
+      "id": "9734af6baa290de2",
+      "text": "# Markup"
+    },
+    {
+      "type": "paragraph",
+      "id": "bca86ec640ea07f6",
+      "text": "Control words are entered in all caps. Search terms are case-insensitive but traditionally entered in lower case. Only the last relevant control word applies."
+    },
+    {
+      "type": "paragraph",
+      "id": "c0d2a1afaf3c2727",
+      "text": "Say WORDS for exact words matching terms."
+    },
+    {
+      "type": "paragraph",
+      "id": "4b6e895c5e1b1672",
+      "text": "Say LINKS for internal links containing terms."
+    },
+    {
+      "type": "paragraph",
+      "id": "824299ed167477d4",
+      "text": "Say SITES for item/journal sites matching terms."
+    },
+    {
+      "type": "paragraph",
+      "id": "04ab5d0de2687948",
+      "text": "Say ITEMS for item ids matching terms."
+    },
+    {
+      "type": "paragraph",
+      "id": "403bccac03f6819f",
+      "text": "Say PLUGINS for item types matching terms."
+    },
+    {
+      "type": "paragraph",
+      "id": "631fe68cd791fb19",
+      "text": "Say AND if all terms should match."
+    },
+    {
+      "type": "paragraph",
+      "id": "9c54cf84cdbd645d",
+      "text": "Say OR if any term should match."
+    },
+    {
+      "type": "paragraph",
+      "id": "af5cd1dc91af80a7",
+      "text": "Say INPUT to delay until additional terms are entered."
+    },
+    {
+      "type": "paragraph",
+      "id": "6554b2115267146d",
+      "text": "Note. The INPUT form functionality bypasses the item editing and journal recording that would otherwise accompany casual searching."
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "About Search Plugin",
+        "story": [
+          {
+            "type": "paragraph",
+            "id": "c042a9c3ae0c51a1",
+            "text": "Here we describe the purpose of the plugin and include a sample."
+          },
+          {
+            "type": "search",
+            "id": "258bd47ce2e5c286",
+            "text": "This is text in the new plugin. You can *double-click* to edit it too."
+          }
+        ]
+      },
+      "date": 1439516063000,
+      "certificate": "from mkplugin.sh"
+    },
+    {
+      "type": "edit",
+      "id": "c042a9c3ae0c51a1",
+      "item": {
+        "type": "paragraph",
+        "id": "c042a9c3ae0c51a1",
+        "text": "Search retrieves pages references from information recorded by federated wiki search services. The plugin may be fully or partially configured for a specific query. When further input is required an input field appears and searching is delayed until return/enter is pressed."
+      },
+      "date": 1440560226605
+    },
+    {
+      "type": "edit",
+      "id": "c042a9c3ae0c51a1",
+      "item": {
+        "type": "paragraph",
+        "id": "c042a9c3ae0c51a1",
+        "text": "Search retrieves page references from information recorded by federated wiki search services. The plugin may be fully or partially configured for a specific query. When further input is required an input field appears and searching is delayed until return/enter is pressed."
+      },
+      "date": 1440560324620
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f3048bf1bbbc5aa6"
+      },
+      "id": "f3048bf1bbbc5aa6",
+      "type": "add",
+      "after": "258bd47ce2e5c286",
+      "date": 1440560374028
+    },
+    {
+      "type": "edit",
+      "id": "f3048bf1bbbc5aa6",
+      "item": {
+        "type": "paragraph",
+        "id": "f3048bf1bbbc5aa6",
+        "text": "The caption says 'searching' while waiting for results."
+      },
+      "date": 1440560411421
+    },
+    {
+      "type": "add",
+      "id": "fb3b13bd49131831",
+      "item": {
+        "type": "paragraph",
+        "id": "fb3b13bd49131831",
+        "text": "The caption says 'ready' while waiting for user input."
+      },
+      "after": "f3048bf1bbbc5aa6",
+      "date": 1440560451405
+    },
+    {
+      "type": "move",
+      "order": [
+        "c042a9c3ae0c51a1",
+        "258bd47ce2e5c286",
+        "fb3b13bd49131831",
+        "f3048bf1bbbc5aa6"
+      ],
+      "id": "fb3b13bd49131831",
+      "date": 1440560455949
+    },
+    {
+      "type": "add",
+      "id": "c315dfe56619e6da",
+      "item": {
+        "type": "paragraph",
+        "id": "c315dfe56619e6da",
+        "text": "The caption says '<nn> titles' when as many results appear."
+      },
+      "after": "f3048bf1bbbc5aa6",
+      "date": 1440560794665
+    },
+    {
+      "type": "edit",
+      "id": "c315dfe56619e6da",
+      "item": {
+        "type": "paragraph",
+        "id": "c315dfe56619e6da",
+        "text": "The caption says '<nn> titles' when as many results show."
+      },
+      "date": 1440560808123
+    },
+    {
+      "type": "remove",
+      "id": "258bd47ce2e5c286",
+      "date": 1440561509682
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "search",
+        "id": "258bd47ce2e5c286",
+        "text": "dorkbot AND INPUT"
+      },
+      "after": "c042a9c3ae0c51a1",
+      "id": "258bd47ce2e5c286",
+      "date": 1440561517668
+    },
+    {
+      "type": "add",
+      "id": "3b38d4f611f96f7a",
+      "item": {
+        "type": "paragraph",
+        "id": "3b38d4f611f96f7a",
+        "text": "Search remains experimental. "
+      },
+      "after": "c042a9c3ae0c51a1",
+      "date": 1440561729701
+    },
+    {
+      "type": "edit",
+      "id": "3b38d4f611f96f7a",
+      "item": {
+        "type": "paragraph",
+        "id": "3b38d4f611f96f7a",
+        "text": "Search remains experimental. [https://github.com/WardCunningham/wiki-plugin-search plugin]"
+      },
+      "date": 1440561779114
+    },
+    {
+      "type": "edit",
+      "id": "3b38d4f611f96f7a",
+      "item": {
+        "type": "paragraph",
+        "id": "3b38d4f611f96f7a",
+        "text": "Search remains experimental. [https://github.com/WardCunningham/wiki-plugin-search plugin] [https://github.com/WardCunningham/search server]"
+      },
+      "date": 1440561817347
+    },
+    {
+      "type": "edit",
+      "id": "c042a9c3ae0c51a1",
+      "item": {
+        "type": "paragraph",
+        "id": "c042a9c3ae0c51a1",
+        "text": "Search retrieves page references from information recorded by federated wiki search services."
+      },
+      "date": 1440562057197
+    },
+    {
+      "type": "add",
+      "id": "449188c8e5628f7f",
+      "item": {
+        "type": "paragraph",
+        "id": "449188c8e5628f7f",
+        "text": "The plugin may be fully or partially configured for a specific query. "
+      },
+      "after": "c042a9c3ae0c51a1",
+      "date": 1440562081196
+    },
+    {
+      "type": "add",
+      "id": "20c3d4b5d29b88e7",
+      "item": {
+        "type": "paragraph",
+        "id": "20c3d4b5d29b88e7",
+        "text": "When further input is required an input field appears and searching is delayed until return/enter is pressed."
+      },
+      "after": "449188c8e5628f7f",
+      "date": 1440562086676
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "search",
+        "id": "637384f69465bfe1",
+        "text": "dorkbot AND INPUT",
+        "alias": "258bd47ce2e5c286"
+      },
+      "after": "449188c8e5628f7f",
+      "id": "637384f69465bfe1",
+      "date": 1440562136798
+    },
+    {
+      "type": "edit",
+      "id": "637384f69465bfe1",
+      "item": {
+        "type": "search",
+        "id": "637384f69465bfe1",
+        "text": "dorkbot AND hackfest",
+        "alias": "258bd47ce2e5c286"
+      },
+      "date": 1440562486443
+    },
+    {
+      "type": "edit",
+      "id": "637384f69465bfe1",
+      "item": {
+        "type": "search",
+        "id": "637384f69465bfe1",
+        "text": "dorkbot AND hackerspace\n",
+        "alias": "258bd47ce2e5c286"
+      },
+      "date": 1440562496098
+    },
+    {
+      "type": "edit",
+      "id": "637384f69465bfe1",
+      "item": {
+        "type": "search",
+        "id": "637384f69465bfe1",
+        "text": "dorkbot AND hackers",
+        "alias": "258bd47ce2e5c286"
+      },
+      "date": 1440562526186
+    },
+    {
+      "type": "edit",
+      "id": "637384f69465bfe1",
+      "item": {
+        "type": "search",
+        "id": "637384f69465bfe1",
+        "text": "dorkbot OR hackers",
+        "alias": "258bd47ce2e5c286"
+      },
+      "date": 1440562532453
+    },
+    {
+      "type": "edit",
+      "id": "637384f69465bfe1",
+      "item": {
+        "type": "search",
+        "id": "637384f69465bfe1",
+        "text": "dorkbot AND oscon",
+        "alias": "258bd47ce2e5c286"
+      },
+      "date": 1440562589839
+    },
+    {
+      "type": "move",
+      "order": [
+        "c042a9c3ae0c51a1",
+        "3b38d4f611f96f7a",
+        "449188c8e5628f7f",
+        "637384f69465bfe1",
+        "20c3d4b5d29b88e7",
+        "258bd47ce2e5c286",
+        "fb3b13bd49131831",
+        "f3048bf1bbbc5aa6",
+        "c315dfe56619e6da"
+      ],
+      "id": "3b38d4f611f96f7a",
+      "date": 1440562653779
+    },
+    {
+      "type": "edit",
+      "id": "c315dfe56619e6da",
+      "item": {
+        "type": "paragraph",
+        "id": "c315dfe56619e6da",
+        "text": "The caption says 'nn titles' when as many results show."
+      },
+      "date": 1440562686588
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "9734af6baa290de2"
+      },
+      "id": "9734af6baa290de2",
+      "type": "add",
+      "after": "c315dfe56619e6da",
+      "date": 1440562801362
+    },
+    {
+      "type": "edit",
+      "id": "9734af6baa290de2",
+      "item": {
+        "type": "markdown",
+        "id": "9734af6baa290de2",
+        "text": "# Markup"
+      },
+      "date": 1440562818261
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "bca86ec640ea07f6"
+      },
+      "id": "bca86ec640ea07f6",
+      "type": "add",
+      "after": "9734af6baa290de2",
+      "date": 1440562830334
+    },
+    {
+      "type": "edit",
+      "id": "bca86ec640ea07f6",
+      "item": {
+        "type": "paragraph",
+        "id": "bca86ec640ea07f6",
+        "text": "Control words are entered in all caps. Search terms are case-insensitive but traditionally entered in lower case."
+      },
+      "date": 1440562906330
+    },
+    {
+      "type": "add",
+      "id": "c0d2a1afaf3c2727",
+      "item": {
+        "type": "paragraph",
+        "id": "c0d2a1afaf3c2727",
+        "text": "Say WORDS to search for exact words on pages."
+      },
+      "after": "bca86ec640ea07f6",
+      "date": 1440562935522
+    },
+    {
+      "type": "add",
+      "id": "4b6e895c5e1b1672",
+      "item": {
+        "type": "paragraph",
+        "id": "4b6e895c5e1b1672",
+        "text": "Say "
+      },
+      "after": "c0d2a1afaf3c2727",
+      "date": 1440562947503
+    },
+    {
+      "type": "edit",
+      "id": "4b6e895c5e1b1672",
+      "item": {
+        "type": "paragraph",
+        "id": "4b6e895c5e1b1672",
+        "text": "Say LINKS to search for words in internal link names."
+      },
+      "date": 1440563080208
+    },
+    {
+      "type": "add",
+      "id": "824299ed167477d4",
+      "item": {
+        "type": "paragraph",
+        "id": "824299ed167477d4",
+        "text": "Say SITES to search for sites matching terms."
+      },
+      "after": "4b6e895c5e1b1672",
+      "date": 1440563166188
+    },
+    {
+      "type": "edit",
+      "id": "824299ed167477d4",
+      "item": {
+        "type": "paragraph",
+        "id": "824299ed167477d4",
+        "text": "Say SITES to search for item/journal sites matching terms."
+      },
+      "date": 1440563185005
+    },
+    {
+      "type": "edit",
+      "id": "c0d2a1afaf3c2727",
+      "item": {
+        "type": "paragraph",
+        "id": "c0d2a1afaf3c2727",
+        "text": "Say WORDS for exact words matching terms."
+      },
+      "date": 1440563215268
+    },
+    {
+      "type": "edit",
+      "id": "4b6e895c5e1b1672",
+      "item": {
+        "type": "paragraph",
+        "id": "4b6e895c5e1b1672",
+        "text": "Say LINKS for internal links containing terms."
+      },
+      "date": 1440563275531
+    },
+    {
+      "type": "edit",
+      "id": "824299ed167477d4",
+      "item": {
+        "type": "paragraph",
+        "id": "824299ed167477d4",
+        "text": "Say SITES for item/journal sites matching terms."
+      },
+      "date": 1440563294044
+    },
+    {
+      "type": "add",
+      "id": "403bccac03f6819f",
+      "item": {
+        "type": "paragraph",
+        "id": "403bccac03f6819f",
+        "text": "Say PLUGINS for item types matching terms."
+      },
+      "after": "824299ed167477d4",
+      "date": 1440563324775
+    },
+    {
+      "type": "add",
+      "id": "04ab5d0de2687948",
+      "item": {
+        "type": "paragraph",
+        "id": "04ab5d0de2687948",
+        "text": "Say ITEMS for item ids matching terms."
+      },
+      "after": "824299ed167477d4",
+      "date": 1440563355047
+    },
+    {
+      "type": "add",
+      "id": "631fe68cd791fb19",
+      "item": {
+        "type": "paragraph",
+        "id": "631fe68cd791fb19",
+        "text": "Say AND if all terms should match."
+      },
+      "after": "403bccac03f6819f",
+      "date": 1440563413982
+    },
+    {
+      "type": "add",
+      "id": "9c54cf84cdbd645d",
+      "item": {
+        "type": "paragraph",
+        "id": "9c54cf84cdbd645d",
+        "text": "Say OR if any term should match."
+      },
+      "after": "631fe68cd791fb19",
+      "date": 1440563426835
+    },
+    {
+      "type": "edit",
+      "id": "bca86ec640ea07f6",
+      "item": {
+        "type": "paragraph",
+        "id": "bca86ec640ea07f6",
+        "text": "Control words are entered in all caps. Search terms are case-insensitive but traditionally entered in lower case. Only the last relevant control word applies. Positioning is aesthetic."
+      },
+      "date": 1440563824457
+    },
+    {
+      "type": "edit",
+      "id": "bca86ec640ea07f6",
+      "item": {
+        "type": "paragraph",
+        "id": "bca86ec640ea07f6",
+        "text": "Control words are entered in all caps. Search terms are case-insensitive but traditionally entered in lower case. Only the last relevant control word applies."
+      },
+      "date": 1440563848976
+    },
+    {
+      "type": "add",
+      "id": "af5cd1dc91af80a7",
+      "item": {
+        "type": "paragraph",
+        "id": "af5cd1dc91af80a7",
+        "text": "Say INPUT to delay search until additional terms are entered."
+      },
+      "after": "9c54cf84cdbd645d",
+      "date": 1440563895780
+    },
+    {
+      "type": "edit",
+      "id": "af5cd1dc91af80a7",
+      "item": {
+        "type": "paragraph",
+        "id": "af5cd1dc91af80a7",
+        "text": "Say INPUT to delay until additional terms are entered."
+      },
+      "date": 1440563907293
+    },
+    {
+      "type": "add",
+      "id": "6554b2115267146d",
+      "item": {
+        "type": "paragraph",
+        "id": "6554b2115267146d",
+        "text": "Note. The input form functionality bypasses the item editing and journal recording that would otherwise accompany casual searching."
+      },
+      "after": "af5cd1dc91af80a7",
+      "date": 1440564061305
+    },
+    {
+      "type": "edit",
+      "id": "6554b2115267146d",
+      "item": {
+        "type": "paragraph",
+        "id": "6554b2115267146d",
+        "text": "Note. The INPUT form functionality bypasses the item editing and journal recording that would otherwise accompany casual searching."
+      },
+      "date": 1440564069895
+    }
+  ]
 }
