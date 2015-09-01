@@ -91,12 +91,12 @@
     {
       "type": "paragraph",
       "id": "631fe68cd791fb19",
-      "text": "Say AND if all terms should match."
+      "text": "Say AND or ALL if all terms should match."
     },
     {
       "type": "paragraph",
       "id": "9c54cf84cdbd645d",
-      "text": "Say OR if any term should match."
+      "text": "Say OR or ANY if any term should match."
     },
     {
       "type": "paragraph",
@@ -681,6 +681,26 @@
         "text": "Note. The INPUT and SEARCH options bypass the item editing and journal recording that would otherwise accompany casual searching."
       },
       "date": 1440570517189
+    },
+    {
+      "type": "edit",
+      "id": "631fe68cd791fb19",
+      "item": {
+        "type": "paragraph",
+        "id": "631fe68cd791fb19",
+        "text": "Say AND or ALL if all terms should match."
+      },
+      "date": 1441080035240
+    },
+    {
+      "type": "edit",
+      "id": "9c54cf84cdbd645d",
+      "item": {
+        "type": "paragraph",
+        "id": "9c54cf84cdbd645d",
+        "text": "Say OR or ANY if any term should match."
+      },
+      "date": 1441080044644
     }
   ]
 }
