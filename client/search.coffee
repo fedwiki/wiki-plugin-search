@@ -92,6 +92,7 @@ emit = ($item, item) ->
 
 bind = ($item, item) ->
   $item.dblclick -> wiki.textEditor $item, item
+  $item.find('input').dblclick -> false
 
 window.plugins.search = {emit, bind} if window?
 module.exports = {expand} if module?
