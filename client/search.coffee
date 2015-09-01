@@ -76,6 +76,12 @@ emit = ($item, item) ->
     text = text.replace /\b(AND|OR)\b/g, (op) ->
       request.match = op.toLowerCase()
       ''
+    text = text.replace /\b(ALL)\b/, (op) ->
+      request.match = 'and'
+      ''
+    text = text.replace /\b(ANY)\b/, (op) ->
+      request.match = 'or'
+      ''
     text = text.replace /\b(WORDS|LINKS|SITES|ITEMS|PLUGINS)\b/g, (op) ->
       request.find = op.toLowerCase()
       ''
