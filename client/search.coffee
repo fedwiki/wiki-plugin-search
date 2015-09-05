@@ -60,13 +60,13 @@ emit = ($item, item) ->
       $item.request = request
       $item
         .find('span')
-        .append "<input type=text size=70></input>"
+        .append '<input type=text style="width: 95%;"></input>'
         .keyup(keystroke)
     else if request.search
       $item.request = request
       $item
         .find('span')
-        .append "<button>search</button>"
+        .append '<button>search</button>'
         .click -> search request
     else
       search request
