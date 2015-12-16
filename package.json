@@ -34,6 +34,6 @@
     "url": "https://github.com/wardcunningham/wiki-plugin-search/issues"
   },
   "engines": {
-    "node": "0.10"
+    "node": ">=0.10"
   }
 }
