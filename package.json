@@ -1,6 +1,6 @@
 {
   "name": "wiki-plugin-search",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Federated Wiki - Search Plugin",
   "keywords": [
     "search",
@@ -28,10 +28,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wardcunningham/wiki-plugin-search.git"
+    "url": "https://github.com/fedwiki/wiki-plugin-search.git"
   },
   "bugs": {
-    "url": "https://github.com/wardcunningham/wiki-plugin-search/issues"
+    "url": "https://github.com/fedwiki/wiki-plugin-search/issues"
   },
   "engines": {
     "node": ">=0.10"
