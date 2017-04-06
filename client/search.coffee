@@ -7,13 +7,6 @@ expand = (text)->
     .replace /\*(.+?)\*/g, '<i>$1</i>'
 
 emit = ($item, item) ->
-  $item.append """
-    <div style="width:93%; background:#eee; padding:.8em; margin-bottom:5px; text-align: center;">
-      <span>#{expand item.text}<br></span>
-      <p class="caption">ready</p>
-    </div>
-    <div class=report></div>
-  """
 
   flag = (slug, site) ->
     """
@@ -29,6 +22,17 @@ emit = ($item, item) ->
 
   report = (result) ->
     (twins slug, sites for slug, sites of result).join('<br>')
+
+  $item.append if item.result?
+    "<div class=report>#{report item.result}</div>"
+  else
+    """
+      <div style="width:93%; background:#eee; padding:.8em; margin-bottom:5px; text-align: center;">
+        <span>#{expand item.text}<br></span>
+        <p class="caption">ready</p>
+      </div>
+      <div class=report></div>
+    """
 
   status = (text) ->
     $item.find('p.caption').text text
@@ -94,7 +98,7 @@ emit = ($item, item) ->
     request.query = text
     request
 
-  handle parse item.text
+  handle parse item.text if item.text?
 
 bind = ($item, item) ->
   $item.dblclick -> wiki.textEditor $item, item
