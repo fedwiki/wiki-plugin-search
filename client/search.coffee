@@ -37,7 +37,7 @@ emit = ($item, item) ->
     status "#{Object.keys(data.result).length} titles, #{elapsed} sec"
     $item
       .find('.report')
-      .append(report data.result)
+      .append report data.result
 
   search = (request) ->
     url = "http://#{item.site||'search.fed.wiki.org:3030'}/match"
