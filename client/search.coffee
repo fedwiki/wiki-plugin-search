@@ -33,17 +33,22 @@ emit = ($item, item) ->
   status = (text) ->
     $item.find('p.caption').text text
 
-  success = (data) ->
-    status "#{Object.keys(data.result).length} titles"
+  success = (data, elapsed) ->
+    status "#{Object.keys(data.result).length} titles, #{elapsed} sec"
     $item
       .find('.report')
-      .append report data.result
+      .append(report data.result)
 
   search = (request) ->
     url = "http://#{item.site||'search.fed.wiki.org:3030'}/match"
     console.log 'search', request
-    $.post(url, request, success, 'json')
-      .fail (e) -> $item.find('.caption').text("search failed #{e.responseText}")
+    quickly = () ->
+      start = Date.now()
+      (data) ->
+        stop = Date.now()
+        success data, (stop-start)/1000.0
+    $.post(url, request, quickly(), 'json')
+      .fail (e) -> status "search failed: #{e.responseText || e.statusText}"
     $item.find('.report').empty()
     status "searching"
 
