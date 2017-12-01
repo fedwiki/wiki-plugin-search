@@ -112,6 +112,11 @@
       "type": "paragraph",
       "id": "6554b2115267146d",
       "text": "Note. The INPUT and SEARCH options bypass the item editing and journal recording that would otherwise accompany casual searching."
+    },
+    {
+      "type": "paragraph",
+      "id": "9bd5192a2f559bc7",
+      "text": "See [[More About Search Plugin]] for more options."
     }
   ],
   "journal": [
@@ -701,6 +706,17 @@
         "text": "Say OR or ANY if any term should match."
       },
       "date": 1441080044644
+    },
+    {
+      "type": "add",
+      "id": "9bd5192a2f559bc7",
+      "item": {
+        "type": "paragraph",
+        "id": "9bd5192a2f559bc7",
+        "text": "See [[More About Search Plugin]] for more options."
+      },
+      "after": "6554b2115267146d",
+      "date": 1491449163749
     }
   ]
 }

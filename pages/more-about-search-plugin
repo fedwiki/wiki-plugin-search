@@ -1,0 +1,858 @@
+{
+  "title": "More About Search Plugin",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "10378664b5a0061b",
+      "text": "The search plugin can be preconfigured with saved search results. This is most useful when other search mechanisms are generating pages with their own results."
+    },
+    {
+      "type": "code",
+      "id": "dd878c5f2591f617",
+      "text": "result = { slug: [ site ] }\nslug = \"air-temperature\"\nsite = \"ward.fed.wiki.org\"\n"
+    },
+    {
+      "type": "paragraph",
+      "id": "5c22adc211cace0d",
+      "text": "Here a previous search for 'txtzyme' has produced this now saved result."
+    },
+    {
+      "type": "search",
+      "id": "b5e6ea8cfabec45f",
+      "params": {
+        "match": "and",
+        "find": "words",
+        "input": "true",
+        "query": "txtzyme"
+      },
+      "result": {
+        "wants-and-needs": [
+          "229698.ward.fed.wiki.org",
+          "667201.ward.fed.wiki.org"
+        ],
+        "ward-cunninghams-sites": [
+          "c2.don.asia.wiki.org",
+          "cj13.sf2.fedwikihappening.net",
+          "sites.don.noyes.asia.wiki.org",
+          "ward.fed.wiki.org"
+        ],
+        "namecom": [
+          "c2.ward.bay.wiki.org"
+        ],
+        "wisticky": [
+          "cmason.fed.wiki.org",
+          "ward.fed.wiki.org"
+        ],
+        "christmas-lights": [
+          "code.fed.wiki.org",
+          "home.c2.com",
+          "ward.fed.wiki.org"
+        ],
+        "photobot-takes-and-shares-photos": [
+          "code.fed.wiki.org",
+          "don.ny2.fedwikihappening.net",
+          "txtzyme.com"
+        ],
+        "robot-platform": [
+          "code.fed.wiki.org",
+          "don.ny2.fedwikihappening.net"
+        ],
+        "sensor-server": [
+          "code.fed.wiki.org",
+          "ward.fed.wiki.org"
+        ],
+        "teensy": [
+          "code.fed.wiki.org"
+        ],
+        "txtzyme": [
+          "code.fed.wiki.org",
+          "lab.fed.wiki.org",
+          "txtzyme.com"
+        ],
+        "federated-wiki-workshop": [
+          "dave.dork.wiki.org",
+          "don.ny2.fedwikihappening.net",
+          "dork.wiki.org"
+        ],
+        "changes-to-the-federation": [
+          "david.bovill.me",
+          "dnoyes.asia.wiki.org",
+          "don.asia.wiki.org"
+        ],
+        "measured-daylight-hours": [
+          "dnoyes.asia.wiki.org",
+          "ward.bay.wiki.org"
+        ],
+        "visible-federation": [
+          "dnoyes.asia.wiki.org",
+          "search.fed.wiki.org:3030",
+          "sites.noyes.asia.wiki.org",
+          "ssdo.asia.wiki.org",
+          "ward.asia.wiki.org"
+        ],
+        "air-temperature": [
+          "don.ny2.fedwikihappening.net",
+          "fed.wiki.org",
+          "home.c2.com",
+          "mura.hhol.hapgood.net:3000",
+          "tw.fed.wiki.org",
+          "ward.fed.wiki.org",
+          "www.xpdx.org",
+          "xpdx.org"
+        ],
+        "choose-plugins": [
+          "don.ny2.fedwikihappening.net",
+          "fed.wiki.org",
+          "help.fed.wiki.org",
+          "journal.hapgood.net",
+          "maha.uk.fedwikihappening.net",
+          "plugin.fedwiki.org",
+          "pmint.fed.wiki.org",
+          "ward.fed.wiki.org",
+          "wiki.jasongreen.net"
+        ],
+        "federated-wiki-videos": [
+          "don.ny2.fedwikihappening.net",
+          "dork.wiki.org",
+          "help.fed.wiki.org",
+          "jason.hhol.hapgood.net:3000",
+          "ksenya.me",
+          "noyes.fed.wiki.org",
+          "sjayanthi.fed.wiki.org",
+          "song.fed.wiki.org",
+          "ted.write.asia.wiki.org",
+          "tug.fed.wiki.org",
+          "video.fed.wiki.org",
+          "video.viral.academy",
+          "write.asia.wiki.org"
+        ],
+        "finished-work": [
+          "don.ny2.fedwikihappening.net",
+          "ward.fed.wiki.org"
+        ],
+        "help-with-plugins": [
+          "don.ny2.fedwikihappening.net"
+        ],
+        "search-plugin": [
+          "don.ny2.fedwikihappening.net",
+          "ward.asia.wiki.org"
+        ],
+        "talk-found-on-45-of-2183-pages": [
+          "don.ny2.fedwikihappening.net"
+        ],
+        "vf-don-ny2": [
+          "don.ny2.fedwikihappening.net"
+        ],
+        "wiki-research-laboratory": [
+          "don.ny2.fedwikihappening.net",
+          "lab.fed.wiki.org",
+          "oscon.fed.wiki.org",
+          "parse.fed.wiki.org"
+        ],
+        "wildcard-dork": [
+          "don.ny2.fedwikihappening.net",
+          "dork.wiki.org"
+        ],
+        "digest-2014-08-20": [
+          "fed.coevolving.com",
+          "fed.wiki.org",
+          "yala.fed.wiki.org"
+        ],
+        "where-numbers-live": [
+          "fedwiki.org",
+          "forum.don.asia.wiki.org",
+          "ward.fed.wiki.org",
+          "www.fedwiki.org"
+        ],
+        "code-refactor-updates": [
+          "fedwiki.rodwell.me"
+        ],
+        "federated-wiki---node-server-components": [
+          "fedwiki.rodwell.me"
+        ],
+        "bad-markup": [
+          "forage.ward.fed.wiki.org"
+        ],
+        "internet-of-broken-things": [
+          "forage.ward.fed.wiki.org",
+          "journal.hapgood.net",
+          "ksenya.me",
+          "wikitytest.federatedwiki.org",
+          "www.xpdx.org",
+          "xpdx.org"
+        ],
+        "server-side-plugins-listening": [
+          "forage.ward.fed.wiki.org",
+          "ward.fed.wiki.org"
+        ],
+        "coordinated-viewing": [
+          "future.fed.wiki",
+          "future.fedwiki.org",
+          "ward.asia.wiki.org"
+        ],
+        "sites-20160520": [
+          "future.fed.wiki"
+        ],
+        "txtzyme-com": [
+          "future.fed.wiki",
+          "sites.noyes.asia.wiki.org"
+        ],
+        "featured-talks": [
+          "hello.ward.bay.wiki.org"
+        ],
+        "historic-wiki-page": [
+          "home.c2.com"
+        ],
+        "internet-of-things": [
+          "home.c2.com:3000",
+          "pi.fed.wiki.org",
+          "raspberry.academy"
+        ],
+        "txtzyme-oscilloscope": [
+          "home.c2.com:3000"
+        ],
+        "ward-cunningham": [
+          "home.c2.com:3000",
+          "tug.fed.wiki.org",
+          "txtzyme.com"
+        ],
+        "about-txtzyme-plugin": [
+          "jonan.asia.wiki.org"
+        ],
+        "learn-wiki": [
+          "jonan.asia.wiki.org"
+        ],
+        "server-side-plugins": [
+          "mura.hhol.hapgood.net:3000",
+          "pi.fed.wiki.org"
+        ],
+        "oscon-2014-hw-showcase": [
+          "oscon.fed.wiki.org"
+        ],
+        "oscon-hw-demo": [
+          "oscon.fed.wiki.org",
+          "sandbox.fed.wiki.org",
+          "txtzyme.com"
+        ],
+        "remote-control-with-txtzyme": [
+          "oscon.fed.wiki.org",
+          "txtzyme.com"
+        ],
+        "txtzyme-plugin": [
+          "oscon.fed.wiki.org",
+          "txtzyme.com"
+        ],
+        "welcome-visitors": [
+          "oscon.fed.wiki.org",
+          "txtzyme.com"
+        ],
+        "node-access-to-gpio": [
+          "pi.fed.wiki.org",
+          "raspberry.academy"
+        ],
+        "realtime-txtzyme": [
+          "pi.fed.wiki.org",
+          "ward.fed.wiki.org"
+        ],
+        "timeseries-plugins": [
+          "plugins.fed.wiki.org"
+        ],
+        "txtzymecom": [
+          "sites.fed.wiki.org"
+        ],
+        "alpha-sites": [
+          "sites.noyes.asia.wiki.org"
+        ],
+        "build-site-lists-here": [
+          "sites.noyes.asia.wiki.org"
+        ],
+        "full-text-search-of-the-federation": [
+          "sites.noyes.asia.wiki.org"
+        ],
+        "is-not-now": [
+          "sites.noyes.asia.wiki.org"
+        ],
+        "searching": [
+          "sites.noyes.asia.wiki.org"
+        ],
+        "atmospheric-tides-wiggle-my-barometer": [
+          "txtzyme.com"
+        ],
+        "averaging-hum-away": [
+          "txtzyme.com"
+        ],
+        "beer-sensor-shows-value-of-flow-control": [
+          "txtzyme.com"
+        ],
+        "martin-fowler-explains-txtzyme": [
+          "txtzyme.com"
+        ],
+        "new-works": [
+          "txtzyme.com"
+        ],
+        "plotting-signals-with-txtzyme": [
+          "txtzyme.com"
+        ],
+        "pre-built-txtzyme-hex-files-and-more": [
+          "txtzyme.com"
+        ],
+        "pulse-measurement-with-txtzyme": [
+          "txtzyme.com"
+        ],
+        "sensorserver-transitions-to-txtzyme": [
+          "txtzyme.com"
+        ],
+        "shell-programming-with-txtzyme": [
+          "txtzyme.com"
+        ],
+        "these-lights-were-made-for-blinkin": [
+          "txtzyme.com"
+        ],
+        "two-years-of-pretty-good-service": [
+          "txtzyme.com"
+        ],
+        "txtzyme-accepted-for-open-source-bridge": [
+          "txtzyme.com"
+        ],
+        "txtzyme-inspires": [
+          "txtzyme.com"
+        ],
+        "txtzyme-javascope-feeds-javas-2d-graphics": [
+          "txtzyme.com"
+        ],
+        "txtzyme-remote-signals": [
+          "txtzyme.com"
+        ],
+        "txtzyme-sparkles-on-led-matrix": [
+          "txtzyme.com"
+        ],
+        "undefined": [
+          "txtzyme.com"
+        ],
+        "visual-perception-study-with-txtzyme": [
+          "txtzyme.com"
+        ],
+        "yow-revisited-in-txtzyme": [
+          "txtzyme.com"
+        ],
+        "hue-of-the-moment": [
+          "ward.bay.wiki.org"
+        ],
+        "realtime-shell-scripts": [
+          "ward.fed.wiki.org"
+        ],
+        "stationary-resources": [
+          "ward.fed.wiki.org"
+        ],
+        "virtual-control-panels": [
+          "ward.fed.wiki.org"
+        ],
+        "fed-wiki-hangout": [
+          "wiki.sfw.c2.com"
+        ]
+      }
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "More About Search Plugin",
+        "story": []
+      },
+      "date": 1491449168760
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "10378664b5a0061b"
+      },
+      "id": "10378664b5a0061b",
+      "type": "add",
+      "date": 1491449171107
+    },
+    {
+      "type": "edit",
+      "id": "10378664b5a0061b",
+      "item": {
+        "type": "paragraph",
+        "id": "10378664b5a0061b",
+        "text": "The search plugin can be preconfigured with saved search results. This is most useful when other search mechanisms are generating pages with search results."
+      },
+      "date": 1491449309415
+    },
+    {
+      "type": "edit",
+      "id": "10378664b5a0061b",
+      "item": {
+        "type": "paragraph",
+        "id": "10378664b5a0061b",
+        "text": "The search plugin can be preconfigured with saved search results. This is most useful when other search mechanisms are generating pages with their own results."
+      },
+      "date": 1491449329246
+    },
+    {
+      "type": "add",
+      "id": "5c22adc211cace0d",
+      "item": {
+        "type": "paragraph",
+        "id": "5c22adc211cace0d",
+        "text": "Here a previous search for 'txtzyme' produced this now saved result."
+      },
+      "after": "10378664b5a0061b",
+      "date": 1491449376697
+    },
+    {
+      "type": "edit",
+      "id": "5c22adc211cace0d",
+      "item": {
+        "type": "paragraph",
+        "id": "5c22adc211cace0d",
+        "text": "Here a previous search for 'txtzyme' has produced this now saved result."
+      },
+      "date": 1491449387370
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "b5e6ea8cfabec45f"
+      },
+      "id": "b5e6ea8cfabec45f",
+      "type": "add",
+      "after": "5c22adc211cace0d",
+      "date": 1491449393198
+    },
+    {
+      "type": "edit",
+      "id": "b5e6ea8cfabec45f",
+      "item": {
+        "type": "search",
+        "id": "b5e6ea8cfabec45f",
+        "params": {
+          "match": "and",
+          "find": "words",
+          "input": "true",
+          "query": "txtzyme"
+        },
+        "result": {
+          "wants-and-needs": [
+            "229698.ward.fed.wiki.org",
+            "667201.ward.fed.wiki.org"
+          ],
+          "ward-cunninghams-sites": [
+            "c2.don.asia.wiki.org",
+            "cj13.sf2.fedwikihappening.net",
+            "sites.don.noyes.asia.wiki.org",
+            "ward.fed.wiki.org"
+          ],
+          "namecom": [
+            "c2.ward.bay.wiki.org"
+          ],
+          "wisticky": [
+            "cmason.fed.wiki.org",
+            "ward.fed.wiki.org"
+          ],
+          "christmas-lights": [
+            "code.fed.wiki.org",
+            "home.c2.com",
+            "ward.fed.wiki.org"
+          ],
+          "photobot-takes-and-shares-photos": [
+            "code.fed.wiki.org",
+            "don.ny2.fedwikihappening.net",
+            "txtzyme.com"
+          ],
+          "robot-platform": [
+            "code.fed.wiki.org",
+            "don.ny2.fedwikihappening.net"
+          ],
+          "sensor-server": [
+            "code.fed.wiki.org",
+            "ward.fed.wiki.org"
+          ],
+          "teensy": [
+            "code.fed.wiki.org"
+          ],
+          "txtzyme": [
+            "code.fed.wiki.org",
+            "lab.fed.wiki.org",
+            "txtzyme.com"
+          ],
+          "federated-wiki-workshop": [
+            "dave.dork.wiki.org",
+            "don.ny2.fedwikihappening.net",
+            "dork.wiki.org"
+          ],
+          "changes-to-the-federation": [
+            "david.bovill.me",
+            "dnoyes.asia.wiki.org",
+            "don.asia.wiki.org"
+          ],
+          "measured-daylight-hours": [
+            "dnoyes.asia.wiki.org",
+            "ward.bay.wiki.org"
+          ],
+          "visible-federation": [
+            "dnoyes.asia.wiki.org",
+            "search.fed.wiki.org:3030",
+            "sites.noyes.asia.wiki.org",
+            "ssdo.asia.wiki.org",
+            "ward.asia.wiki.org"
+          ],
+          "air-temperature": [
+            "don.ny2.fedwikihappening.net",
+            "fed.wiki.org",
+            "home.c2.com",
+            "mura.hhol.hapgood.net:3000",
+            "tw.fed.wiki.org",
+            "ward.fed.wiki.org",
+            "www.xpdx.org",
+            "xpdx.org"
+          ],
+          "choose-plugins": [
+            "don.ny2.fedwikihappening.net",
+            "fed.wiki.org",
+            "help.fed.wiki.org",
+            "journal.hapgood.net",
+            "maha.uk.fedwikihappening.net",
+            "plugin.fedwiki.org",
+            "pmint.fed.wiki.org",
+            "ward.fed.wiki.org",
+            "wiki.jasongreen.net"
+          ],
+          "federated-wiki-videos": [
+            "don.ny2.fedwikihappening.net",
+            "dork.wiki.org",
+            "help.fed.wiki.org",
+            "jason.hhol.hapgood.net:3000",
+            "ksenya.me",
+            "noyes.fed.wiki.org",
+            "sjayanthi.fed.wiki.org",
+            "song.fed.wiki.org",
+            "ted.write.asia.wiki.org",
+            "tug.fed.wiki.org",
+            "video.fed.wiki.org",
+            "video.viral.academy",
+            "write.asia.wiki.org"
+          ],
+          "finished-work": [
+            "don.ny2.fedwikihappening.net",
+            "ward.fed.wiki.org"
+          ],
+          "help-with-plugins": [
+            "don.ny2.fedwikihappening.net"
+          ],
+          "search-plugin": [
+            "don.ny2.fedwikihappening.net",
+            "ward.asia.wiki.org"
+          ],
+          "talk-found-on-45-of-2183-pages": [
+            "don.ny2.fedwikihappening.net"
+          ],
+          "vf-don-ny2": [
+            "don.ny2.fedwikihappening.net"
+          ],
+          "wiki-research-laboratory": [
+            "don.ny2.fedwikihappening.net",
+            "lab.fed.wiki.org",
+            "oscon.fed.wiki.org",
+            "parse.fed.wiki.org"
+          ],
+          "wildcard-dork": [
+            "don.ny2.fedwikihappening.net",
+            "dork.wiki.org"
+          ],
+          "digest-2014-08-20": [
+            "fed.coevolving.com",
+            "fed.wiki.org",
+            "yala.fed.wiki.org"
+          ],
+          "where-numbers-live": [
+            "fedwiki.org",
+            "forum.don.asia.wiki.org",
+            "ward.fed.wiki.org",
+            "www.fedwiki.org"
+          ],
+          "code-refactor-updates": [
+            "fedwiki.rodwell.me"
+          ],
+          "federated-wiki---node-server-components": [
+            "fedwiki.rodwell.me"
+          ],
+          "bad-markup": [
+            "forage.ward.fed.wiki.org"
+          ],
+          "internet-of-broken-things": [
+            "forage.ward.fed.wiki.org",
+            "journal.hapgood.net",
+            "ksenya.me",
+            "wikitytest.federatedwiki.org",
+            "www.xpdx.org",
+            "xpdx.org"
+          ],
+          "server-side-plugins-listening": [
+            "forage.ward.fed.wiki.org",
+            "ward.fed.wiki.org"
+          ],
+          "coordinated-viewing": [
+            "future.fed.wiki",
+            "future.fedwiki.org",
+            "ward.asia.wiki.org"
+          ],
+          "sites-20160520": [
+            "future.fed.wiki"
+          ],
+          "txtzyme-com": [
+            "future.fed.wiki",
+            "sites.noyes.asia.wiki.org"
+          ],
+          "featured-talks": [
+            "hello.ward.bay.wiki.org"
+          ],
+          "historic-wiki-page": [
+            "home.c2.com"
+          ],
+          "internet-of-things": [
+            "home.c2.com:3000",
+            "pi.fed.wiki.org",
+            "raspberry.academy"
+          ],
+          "txtzyme-oscilloscope": [
+            "home.c2.com:3000"
+          ],
+          "ward-cunningham": [
+            "home.c2.com:3000",
+            "tug.fed.wiki.org",
+            "txtzyme.com"
+          ],
+          "about-txtzyme-plugin": [
+            "jonan.asia.wiki.org"
+          ],
+          "learn-wiki": [
+            "jonan.asia.wiki.org"
+          ],
+          "server-side-plugins": [
+            "mura.hhol.hapgood.net:3000",
+            "pi.fed.wiki.org"
+          ],
+          "oscon-2014-hw-showcase": [
+            "oscon.fed.wiki.org"
+          ],
+          "oscon-hw-demo": [
+            "oscon.fed.wiki.org",
+            "sandbox.fed.wiki.org",
+            "txtzyme.com"
+          ],
+          "remote-control-with-txtzyme": [
+            "oscon.fed.wiki.org",
+            "txtzyme.com"
+          ],
+          "txtzyme-plugin": [
+            "oscon.fed.wiki.org",
+            "txtzyme.com"
+          ],
+          "welcome-visitors": [
+            "oscon.fed.wiki.org",
+            "txtzyme.com"
+          ],
+          "node-access-to-gpio": [
+            "pi.fed.wiki.org",
+            "raspberry.academy"
+          ],
+          "realtime-txtzyme": [
+            "pi.fed.wiki.org",
+            "ward.fed.wiki.org"
+          ],
+          "timeseries-plugins": [
+            "plugins.fed.wiki.org"
+          ],
+          "txtzymecom": [
+            "sites.fed.wiki.org"
+          ],
+          "alpha-sites": [
+            "sites.noyes.asia.wiki.org"
+          ],
+          "build-site-lists-here": [
+            "sites.noyes.asia.wiki.org"
+          ],
+          "full-text-search-of-the-federation": [
+            "sites.noyes.asia.wiki.org"
+          ],
+          "is-not-now": [
+            "sites.noyes.asia.wiki.org"
+          ],
+          "searching": [
+            "sites.noyes.asia.wiki.org"
+          ],
+          "atmospheric-tides-wiggle-my-barometer": [
+            "txtzyme.com"
+          ],
+          "averaging-hum-away": [
+            "txtzyme.com"
+          ],
+          "beer-sensor-shows-value-of-flow-control": [
+            "txtzyme.com"
+          ],
+          "martin-fowler-explains-txtzyme": [
+            "txtzyme.com"
+          ],
+          "new-works": [
+            "txtzyme.com"
+          ],
+          "plotting-signals-with-txtzyme": [
+            "txtzyme.com"
+          ],
+          "pre-built-txtzyme-hex-files-and-more": [
+            "txtzyme.com"
+          ],
+          "pulse-measurement-with-txtzyme": [
+            "txtzyme.com"
+          ],
+          "sensorserver-transitions-to-txtzyme": [
+            "txtzyme.com"
+          ],
+          "shell-programming-with-txtzyme": [
+            "txtzyme.com"
+          ],
+          "these-lights-were-made-for-blinkin": [
+            "txtzyme.com"
+          ],
+          "two-years-of-pretty-good-service": [
+            "txtzyme.com"
+          ],
+          "txtzyme-accepted-for-open-source-bridge": [
+            "txtzyme.com"
+          ],
+          "txtzyme-inspires": [
+            "txtzyme.com"
+          ],
+          "txtzyme-javascope-feeds-javas-2d-graphics": [
+            "txtzyme.com"
+          ],
+          "txtzyme-remote-signals": [
+            "txtzyme.com"
+          ],
+          "txtzyme-sparkles-on-led-matrix": [
+            "txtzyme.com"
+          ],
+          "undefined": [
+            "txtzyme.com"
+          ],
+          "visual-perception-study-with-txtzyme": [
+            "txtzyme.com"
+          ],
+          "yow-revisited-in-txtzyme": [
+            "txtzyme.com"
+          ],
+          "hue-of-the-moment": [
+            "ward.bay.wiki.org"
+          ],
+          "realtime-shell-scripts": [
+            "ward.fed.wiki.org"
+          ],
+          "stationary-resources": [
+            "ward.fed.wiki.org"
+          ],
+          "virtual-control-panels": [
+            "ward.fed.wiki.org"
+          ],
+          "fed-wiki-hangout": [
+            "wiki.sfw.c2.com"
+          ]
+        }
+      },
+      "date": 1491449409471
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "dd878c5f2591f617"
+      },
+      "id": "dd878c5f2591f617",
+      "type": "add",
+      "after": "b5e6ea8cfabec45f",
+      "date": 1491453185694
+    },
+    {
+      "type": "edit",
+      "id": "dd878c5f2591f617",
+      "item": {
+        "type": "code",
+        "id": "dd878c5f2591f617",
+        "text": "result = { title }\ntitle ="
+      },
+      "date": 1491453223702
+    },
+    {
+      "type": "edit",
+      "id": "dd878c5f2591f617",
+      "item": {
+        "type": "code",
+        "id": "dd878c5f2591f617",
+        "text": "result = { title: [sites] }\n"
+      },
+      "date": 1491453301933
+    },
+    {
+      "type": "edit",
+      "id": "dd878c5f2591f617",
+      "item": {
+        "type": "code",
+        "id": "dd878c5f2591f617",
+        "text": "result = { title: [ sites ] }\ntitle = \n"
+      },
+      "date": 1491453378429
+    },
+    {
+      "type": "edit",
+      "id": "dd878c5f2591f617",
+      "item": {
+        "type": "code",
+        "id": "dd878c5f2591f617",
+        "text": "result = { slug: [ sites ] }\nslug = \n"
+      },
+      "date": 1491453403007
+    },
+    {
+      "type": "edit",
+      "id": "dd878c5f2591f617",
+      "item": {
+        "type": "code",
+        "id": "dd878c5f2591f617",
+        "text": "result = { slug: [ site ] }\nslug = \"air-temperature\"\nsite \n"
+      },
+      "date": 1491453488507
+    },
+    {
+      "type": "edit",
+      "id": "dd878c5f2591f617",
+      "item": {
+        "type": "code",
+        "id": "dd878c5f2591f617",
+        "text": "result = { slug: [ site ] }\nslug = \"air-temperature\"\nsite = \"fed.wiki.org\"\n"
+      },
+      "date": 1491453513460
+    },
+    {
+      "type": "edit",
+      "id": "dd878c5f2591f617",
+      "item": {
+        "type": "code",
+        "id": "dd878c5f2591f617",
+        "text": "result = { slug: [ site ] }\nslug = \"air-temperature\"\nsite = \"ward.fed.wiki.org\"\n"
+      },
+      "date": 1491453532621
+    },
+    {
+      "type": "move",
+      "order": [
+        "10378664b5a0061b",
+        "dd878c5f2591f617",
+        "5c22adc211cace0d",
+        "b5e6ea8cfabec45f"
+      ],
+      "id": "dd878c5f2591f617",
+      "date": 1491453541931
+    }
+  ]
+}
