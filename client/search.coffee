@@ -27,11 +27,11 @@ emit = ($item, item) ->
     "<div class=report>#{report item.result}</div>"
   else
     """
-      <div style="width:93%; background:#eee; padding:.8em; margin-bottom:5px; text-align: center;">
+      <div style="width:93%; background:#eee; padding:16px; margin-bottom:5px; text-align: center;">
         <span>#{expand item.text}<br></span>
         <p class="caption">ready</p>
+        <div class=report style="text-align:left;"></div>
       </div>
-      <div class=report></div>
     """
 
   status = (text) ->
