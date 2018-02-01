@@ -20,10 +20,10 @@
   "devDependencies": {
     "expect.js": "*",
     "grunt": "^1.0.1",
-    "grunt-contrib-coffee": "^1.0.0",
+    "grunt-contrib-coffee": "^2.0.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-mocha-test": "~0.12",
-    "mocha": "*"
+    "grunt-mocha-test": "^0.13.3",
+    "mocha": "^5.0.0"
   },
   "license": "MIT",
   "repository": {
