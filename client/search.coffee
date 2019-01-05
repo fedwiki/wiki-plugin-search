@@ -91,7 +91,7 @@ emit = ($item, item) ->
     text = text.replace /\b(ANY)\b/, (op) ->
       request.match = 'or'
       ''
-    text = text.replace /\b(WORDS|LINKS|SITES|ITEMS|PLUGINS)\b/g, (op) ->
+    text = text.replace /\b(WORDS|LINKS|SITES|SLUGS|ITEMS|PLUGINS)\b/g, (op) ->
       request.find = op.toLowerCase()
       ''
     text = text.replace /\b(INPUT)\b/, (op) ->
