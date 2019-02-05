@@ -80,6 +80,11 @@
     },
     {
       "type": "paragraph",
+      "id": "4574e4a965233093",
+      "text": "Say SLUGS for page titles as slugs matching terms."
+    },
+    {
+      "type": "paragraph",
       "id": "04ab5d0de2687948",
       "text": "Say ITEMS for item ids matching terms."
     },
@@ -717,6 +722,17 @@
       },
       "after": "6554b2115267146d",
       "date": 1491449163749
+    },
+    {
+      "type": "add",
+      "id": "4574e4a965233093",
+      "item": {
+        "type": "paragraph",
+        "id": "4574e4a965233093",
+        "text": "Say SLUGS for page titles as slugs matching terms."
+      },
+      "after": "824299ed167477d4",
+      "date": 1546729861674
     }
   ]
 }
