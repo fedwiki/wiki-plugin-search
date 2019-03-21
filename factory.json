@@ -1,5 +1,6 @@
 {
   "name": "Search",
   "title": "Search Plugin",
-  "category": "data"
+  "category": "data",
+  "pages": ["Federation Search"]
 }
