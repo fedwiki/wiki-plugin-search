@@ -13,8 +13,8 @@
     },
     {
       "type": "paragraph",
-      "id": "560456f471095e42",
-      "text": "See [[Weekly Roster]] for new editing activity updated four times a day. Also [http://search.fed.wiki.org:3030/counts.html plot] [http://search.fed.wiki.org:3030/logs log]"
+      "id": "e8698a4cd5220e43",
+      "text": "More [[About Search Plugin]]"
     }
   ],
   "journal": [
@@ -56,15 +56,28 @@
       "date": 1552855412194
     },
     {
+      "type": "fork",
+      "date": 1555276206793
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "e8698a4cd5220e43"
+      },
+      "id": "e8698a4cd5220e43",
       "type": "add",
+      "after": "b1d1f1070ac7c0b9",
+      "date": 1555276209082
+    },
+    {
+      "type": "edit",
+      "id": "e8698a4cd5220e43",
       "item": {
         "type": "paragraph",
-        "id": "560456f471095e42",
-        "text": "See [[Weekly Roster]] for new editing activity updated four times a day. Also [http://search.fed.wiki.org:3030/counts.html plot] [http://search.fed.wiki.org:3030/logs log]"
+        "id": "e8698a4cd5220e43",
+        "text": "More [[About Search Plugin]]"
       },
-      "after": "b1d1f1070ac7c0b9",
-      "id": "560456f471095e42",
-      "date": 1552855419514
+      "date": 1555276226218
     }
   ]
 }
