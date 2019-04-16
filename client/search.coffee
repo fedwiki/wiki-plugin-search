@@ -64,12 +64,17 @@ emit = ($item, item) ->
         request.query += " #{input}"
         search request
 
+  stopBubble = (e) ->
+    if e.keyCode is 37 or e.keyCode is 39
+      e.stopPropagation()
+
   handle = (request) ->
     if request.input
       $item.request = request
       $item
         .find('span')
         .append '<input type=text style="width: 95%;"></input>'
+        .keydown(stopBubble)
         .keyup(keystroke)
     else if request.search
       $item.request = request
@@ -111,4 +116,3 @@ bind = ($item, item) ->
 
 window.plugins.search = {emit, bind} if window?
 module.exports = {expand} if module?
-
