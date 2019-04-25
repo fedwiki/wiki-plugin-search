@@ -1,0 +1,70 @@
+{
+  "title": "Federation Search",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "2ff061a264c2e916",
+      "text": "Search the visible federation for pages matching all words entered. Case doesn't matter but spelling does."
+    },
+    {
+      "type": "search",
+      "id": "b1d1f1070ac7c0b9",
+      "text": "ALL WORDS INPUT"
+    },
+    {
+      "type": "paragraph",
+      "id": "560456f471095e42",
+      "text": "See [[Weekly Roster]] for new editing activity updated four times a day. Also [http://search.fed.wiki.org:3030/counts.html plot] [http://search.fed.wiki.org:3030/logs log]"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Federation Search",
+        "story": []
+      },
+      "date": 1552855381346
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "2ff061a264c2e916",
+        "text": "Search the visible federation for pages matching all words entered. Case doesn't matter but spelling does."
+      },
+      "id": "2ff061a264c2e916",
+      "date": 1552855394240
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "search",
+        "id": "b1d1f1070ac7c0b9",
+        "text": "ALL WORDS INPUT"
+      },
+      "id": "b1d1f1070ac7c0b9",
+      "date": 1552855402175
+    },
+    {
+      "type": "move",
+      "order": [
+        "2ff061a264c2e916",
+        "b1d1f1070ac7c0b9"
+      ],
+      "id": "2ff061a264c2e916",
+      "date": 1552855412194
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "560456f471095e42",
+        "text": "See [[Weekly Roster]] for new editing activity updated four times a day. Also [http://search.fed.wiki.org:3030/counts.html plot] [http://search.fed.wiki.org:3030/logs log]"
+      },
+      "after": "b1d1f1070ac7c0b9",
+      "id": "560456f471095e42",
+      "date": 1552855419514
+    }
+  ]
+}
