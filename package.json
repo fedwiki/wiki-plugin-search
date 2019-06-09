@@ -37,5 +37,8 @@
   },
   "engines": {
     "node": ">=0.10"
+  },
+  "dependencies": {
+    "grunt-git-authors": "^3.2.0"
   }
 }
