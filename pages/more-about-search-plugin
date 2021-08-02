@@ -19,6 +19,7 @@
     {
       "type": "search",
       "id": "b5e6ea8cfabec45f",
+      "text": " ",
       "params": {
         "match": "and",
         "find": "words",
@@ -428,6 +429,7 @@
       "item": {
         "type": "search",
         "id": "b5e6ea8cfabec45f",
+        "text": " ",
         "params": {
           "match": "and",
           "find": "words",
