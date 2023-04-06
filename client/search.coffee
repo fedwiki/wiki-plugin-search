@@ -70,13 +70,13 @@ emit = ($item, item) ->
       $item
         .find('span')
         .append '<input type=text style="width: 95%;"></input>'
-        .keyup(keystroke)
+        .on 'keyup', keystroke
     else if request.search
       $item.request = request
       $item
         .find('span')
         .append '<button>search</button>'
-        .click -> search request
+        .on 'click', () -> search request
     else
       search request
 
@@ -106,8 +106,8 @@ emit = ($item, item) ->
   handle parse item.text if item.text?
 
 bind = ($item, item) ->
-  $item.dblclick -> wiki.textEditor $item, item
-  $item.find('input').dblclick -> false
+  $item.on 'dblclick', () -> wiki.textEditor $item, item
+  $item.find('input').on 'dblclick', () -> false
 
 window.plugins.search = {emit, bind} if window?
 module.exports = {expand} if module?
