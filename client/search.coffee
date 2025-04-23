@@ -103,7 +103,8 @@ emit = ($item, item) ->
     request.query = text
     request
 
-  handle parse item.text if item.text?
+  # only if item.text is present, and not all spaces
+  handle parse item.text if item.text? and item.text.trim().length > 0
 
 bind = ($item, item) ->
   $item.on 'dblclick', () -> wiki.textEditor $item, item
