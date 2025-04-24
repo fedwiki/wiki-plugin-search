@@ -97,11 +97,11 @@ const emit = ($item, item) => {
       request.match = op.toLowerCase()
       return ''
     })
-    text = text.replace(/\b(ALL)\b/, op => {
+    text = text.replace(/\b(ALL)\b/, () => {
       request.match = 'and'
       return ''
     })
-    text = text.replace(/\b(ANY)\b/, op => {
+    text = text.replace(/\b(ANY)\b/, () => {
       request.match = 'or'
       return ''
     })
@@ -109,15 +109,15 @@ const emit = ($item, item) => {
       request.find = op.toLowerCase()
       return ''
     })
-    text = text.replace(/\b(INPUT)\b/, op => {
+    text = text.replace(/\b(INPUT)\b/, () => {
       request.input = true
       return ''
     })
-    text = text.replace(/\b(SEARCH)\b/, op => {
+    text = text.replace(/\b(SEARCH)\b/, () => {
       request.search = true
       return ''
     })
-    request.query = text
+    request.query = text.trim()
     return request
   }
 
