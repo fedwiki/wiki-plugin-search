@@ -13,7 +13,7 @@ const emit = ($item, item) => {
     return `
       <img class="remote"
         title="${site}"
-        src="http://${site}/favicon.png"
+        src="${wiki.site(site).flag()}"
         data-site="${site}"
         data-slug="${slug}">`
   }
