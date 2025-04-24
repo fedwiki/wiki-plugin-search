@@ -1,7 +1,7 @@
 // build time tests for search plugin
 // see http://mochajs.org/
 
-import { search } from '../client/search'
+import { search } from '../client/search.js'
 import expect from 'expect.js'
 
 describe('search plugin', () => {
