@@ -78,7 +78,7 @@ const emit = ($item, item) => {
   const handle = request => {
     if (request.input) {
       $item.request = request
-      $item.find('span').append('<input type=text style="width: 95%;"></input>').on('keyup', keystroke)
+      $item.find('span').append('<input type=search style="width: 95%;"></input>').on('keyup', keystroke)
     } else if (request.search) {
       $item.request = request
       $item
