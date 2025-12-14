@@ -2,6 +2,7 @@
 // see http://mochajs.org/
 
 import { search } from '../client/search.js'
+import { describe, it } from 'node:test'
 import expect from 'expect.js'
 
 describe('search plugin', () => {
